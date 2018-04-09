@@ -2,6 +2,6 @@
 # puppies is open-source software under the MIT license (see LICENSE).
 
 # puppies Version:
-ecl_VER =  0  # Major version
-ecl_MIN =  0  # Minor version
-ecl_REV =  1  # Revision
+ECL_VER =  0  # Major version
+ECL_MIN =  0  # Minor version
+ECL_REV =  1  # Revision

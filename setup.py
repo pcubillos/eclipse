@@ -32,8 +32,8 @@ for i in range(len(files)):
 
 
 setup(name         = "eclipse",
-      version      = "{:d}.{:d}.{:d}".format(ver.ecl_VER, ver.ecl_MIN,
-                                             ver.ecl_REV),
+      version      = "{:d}.{:d}.{:d}".format(ver.ECL_VER, ver.ECL_MIN,
+                                             ver.ECL_REV),
       author       = "Patricio Cubillos",
       author_email = "patricio.cubillos@oeaw.ac.at",
       url          = "https://github.com/pcubillos/eclipse",
