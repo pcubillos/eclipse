@@ -4,4 +4,4 @@
 # puppies Version:
 ECL_VER =  0  # Major version
 ECL_MIN =  1  # Minor version
-ECL_REV =  1  # Revision
+ECL_REV =  2  # Revision
