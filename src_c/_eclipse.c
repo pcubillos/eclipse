@@ -105,7 +105,7 @@ static PyObject *mandelecl(PyObject *self, PyObject *args){
       if (INDd(t,i) > t1  &&  INDd(t,i) < t2){
         z  = -2*p*(INDd(t,i)-t1)/ting + 1 + p;
       }
-      else if (INDd(t,i) > t3  &&  INDd(t,i) < t4){
+      else{ /* (INDd(t,i) > t3  &&  INDd(t,i) < t4)         */
         z  =  2*p*(INDd(t,i)-t3)/tegr + 1 - p;
       }
       INDd(eclipse,i) += depth - sign(depth)/M_PI * (p*p*k0(p,z) + k1(p,z)
