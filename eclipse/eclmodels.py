@@ -59,7 +59,7 @@ class Ecl(object):
     return self.eval(params, time)
 
 
-  def setup(self, time=None, mask=None, params=None):
+  def setup(self, time=None, mask=None, params=None, obj=None):
     """
     Set the model's attributes (when not None).
 
@@ -71,7 +71,16 @@ class Ecl(object):
        Times good-value mask.
     params: 1D float ndarray
        Model parameters.
+    obj: An object
+       If not None, extract the time and mask values from the
+       object's attributes.
     """
+    if obj is not None:
+      time = obj.time
+      if mask is None:  # Input mask takes priority over obj.mask
+        mask = obj.mask
+      # FINDME: do I want params?
+
     # Independent variables:
     if time is not None:
       if mask is None:
